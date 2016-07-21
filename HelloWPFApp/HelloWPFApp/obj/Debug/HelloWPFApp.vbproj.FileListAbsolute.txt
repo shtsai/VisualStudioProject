@@ -1,16 +1,1 @@
 C:\Users\Admin\Desktop\VisualStudioProject\HelloWPFApp\HelloWPFApp\bin\Debug\HelloWPFApp.exe.config
-C:\Users\Admin\Desktop\VisualStudioProject\HelloWPFApp\HelloWPFApp\bin\Debug\HelloWPFApp.exe
-C:\Users\Admin\Desktop\VisualStudioProject\HelloWPFApp\HelloWPFApp\bin\Debug\HelloWPFApp.pdb
-C:\Users\Admin\Desktop\VisualStudioProject\HelloWPFApp\HelloWPFApp\bin\Debug\HelloWPFApp.xml
-C:\Users\Admin\Desktop\VisualStudioProject\HelloWPFApp\HelloWPFApp\obj\Debug\HelloWPFApp.vbprojResolveAssemblyReference.cache
-C:\Users\Admin\Desktop\VisualStudioProject\HelloWPFApp\HelloWPFApp\obj\Debug\Greetings.g.vb
-C:\Users\Admin\Desktop\VisualStudioProject\HelloWPFApp\HelloWPFApp\obj\Debug\Application.g.vb
-C:\Users\Admin\Desktop\VisualStudioProject\HelloWPFApp\HelloWPFApp\obj\Debug\HelloWPFApp_MarkupCompile.cache
-C:\Users\Admin\Desktop\VisualStudioProject\HelloWPFApp\HelloWPFApp\obj\Debug\HelloWPFApp_MarkupCompile.lref
-C:\Users\Admin\Desktop\VisualStudioProject\HelloWPFApp\HelloWPFApp\obj\Debug\Greetings.baml
-C:\Users\Admin\Desktop\VisualStudioProject\HelloWPFApp\HelloWPFApp\obj\Debug\HelloWPFApp.g.resources
-C:\Users\Admin\Desktop\VisualStudioProject\HelloWPFApp\HelloWPFApp\obj\Debug\HelloWPFApp.Resources.resources
-C:\Users\Admin\Desktop\VisualStudioProject\HelloWPFApp\HelloWPFApp\obj\Debug\HelloWPFApp.vbproj.GenerateResource.Cache
-C:\Users\Admin\Desktop\VisualStudioProject\HelloWPFApp\HelloWPFApp\obj\Debug\HelloWPFApp.exe
-C:\Users\Admin\Desktop\VisualStudioProject\HelloWPFApp\HelloWPFApp\obj\Debug\HelloWPFApp.xml
-C:\Users\Admin\Desktop\VisualStudioProject\HelloWPFApp\HelloWPFApp\obj\Debug\HelloWPFApp.pdb

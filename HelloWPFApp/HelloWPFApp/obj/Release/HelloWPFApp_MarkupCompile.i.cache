@@ -4,7 +4,7 @@
 winexe
 VB
 .vb
-C:\Users\Admin\Desktop\VisualStudioProject\HelloWPFApp\HelloWPFApp\obj\Debug\
+C:\Users\Admin\Desktop\VisualStudioProject\HelloWPFApp\HelloWPFApp\obj\Release\
 HelloWPFApp
 none
 false
@@ -12,9 +12,9 @@ false
 C:\Users\Admin\Desktop\VisualStudioProject\HelloWPFApp\HelloWPFApp\Application.xaml
 1631417184
 
-62014044192
+7-1757839313
 11-131189759
 Greetings.xaml;
 
-False
+True
 
