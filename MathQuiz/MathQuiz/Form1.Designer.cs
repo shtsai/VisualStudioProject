@@ -53,10 +53,23 @@
             this.timesLeftLabel = new System.Windows.Forms.Label();
             this.startButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label7 = new System.Windows.Forms.Label();
+            this.timeButton1 = new System.Windows.Forms.RadioButton();
+            this.timeButton2 = new System.Windows.Forms.RadioButton();
+            this.timeButton3 = new System.Windows.Forms.RadioButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.easyButton = new System.Windows.Forms.RadioButton();
+            this.hardButton = new System.Windows.Forms.RadioButton();
+            this.mediumButton = new System.Windows.Forms.RadioButton();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.sum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.difference)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quotient)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.product)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // timeLabel
@@ -73,11 +86,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(165, 29);
+            this.label1.Location = new System.Drawing.Point(99, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 25);
+            this.label1.Size = new System.Drawing.Size(167, 25);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Time Left";
+            this.label1.Text = "Time Remaining";
             // 
             // plusLeftLabel
             // 
@@ -123,6 +136,11 @@
             // 
             this.sum.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.sum.Location = new System.Drawing.Point(314, 84);
+            this.sum.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.sum.Name = "sum";
             this.sum.Size = new System.Drawing.Size(100, 35);
             this.sum.TabIndex = 2;
@@ -132,6 +150,11 @@
             // 
             this.difference.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.difference.Location = new System.Drawing.Point(314, 134);
+            this.difference.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.difference.Name = "difference";
             this.difference.Size = new System.Drawing.Size(100, 35);
             this.difference.TabIndex = 3;
@@ -181,6 +204,11 @@
             // 
             this.quotient.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.quotient.Location = new System.Drawing.Point(314, 234);
+            this.quotient.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.quotient.Name = "quotient";
             this.quotient.Size = new System.Drawing.Size(100, 35);
             this.quotient.TabIndex = 5;
@@ -230,6 +258,11 @@
             // 
             this.product.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.product.Location = new System.Drawing.Point(314, 184);
+            this.product.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.product.Name = "product";
             this.product.Size = new System.Drawing.Size(100, 35);
             this.product.TabIndex = 4;
@@ -279,7 +312,7 @@
             // 
             this.startButton.AutoSize = true;
             this.startButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.startButton.Location = new System.Drawing.Point(170, 294);
+            this.startButton.Location = new System.Drawing.Point(325, 297);
             this.startButton.Name = "startButton";
             this.startButton.Size = new System.Drawing.Size(127, 34);
             this.startButton.TabIndex = 1;
@@ -292,11 +325,132 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label7.Location = new System.Drawing.Point(12, 302);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(53, 24);
+            this.label7.TabIndex = 21;
+            this.label7.Text = "Time";
+            // 
+            // timeButton1
+            // 
+            this.timeButton1.AutoSize = true;
+            this.timeButton1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.timeButton1.Location = new System.Drawing.Point(3, 3);
+            this.timeButton1.Name = "timeButton1";
+            this.timeButton1.Size = new System.Drawing.Size(42, 17);
+            this.timeButton1.TabIndex = 22;
+            this.timeButton1.Text = "15s";
+            this.timeButton1.UseVisualStyleBackColor = true;
+            // 
+            // timeButton2
+            // 
+            this.timeButton2.AutoSize = true;
+            this.timeButton2.Checked = true;
+            this.timeButton2.Location = new System.Drawing.Point(3, 26);
+            this.timeButton2.Name = "timeButton2";
+            this.timeButton2.Size = new System.Drawing.Size(42, 17);
+            this.timeButton2.TabIndex = 23;
+            this.timeButton2.TabStop = true;
+            this.timeButton2.Text = "30s";
+            this.timeButton2.UseVisualStyleBackColor = true;
+            // 
+            // timeButton3
+            // 
+            this.timeButton3.AutoSize = true;
+            this.timeButton3.Location = new System.Drawing.Point(3, 48);
+            this.timeButton3.Name = "timeButton3";
+            this.timeButton3.Size = new System.Drawing.Size(42, 17);
+            this.timeButton3.TabIndex = 24;
+            this.timeButton3.Text = "60s";
+            this.timeButton3.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.timeButton1);
+            this.panel1.Controls.Add(this.timeButton3);
+            this.panel1.Controls.Add(this.timeButton2);
+            this.panel1.Location = new System.Drawing.Point(71, 279);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(52, 71);
+            this.panel1.TabIndex = 25;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.easyButton);
+            this.panel2.Controls.Add(this.hardButton);
+            this.panel2.Controls.Add(this.mediumButton);
+            this.panel2.Location = new System.Drawing.Point(212, 279);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(71, 71);
+            this.panel2.TabIndex = 26;
+            // 
+            // easyButton
+            // 
+            this.easyButton.AutoSize = true;
+            this.easyButton.Cursor = System.Windows.Forms.Cursors.Default;
+            this.easyButton.Location = new System.Drawing.Point(3, 3);
+            this.easyButton.Name = "easyButton";
+            this.easyButton.Size = new System.Drawing.Size(48, 17);
+            this.easyButton.TabIndex = 22;
+            this.easyButton.Text = "Easy";
+            this.easyButton.UseVisualStyleBackColor = true;
+            // 
+            // hardButton
+            // 
+            this.hardButton.AutoSize = true;
+            this.hardButton.Location = new System.Drawing.Point(3, 48);
+            this.hardButton.Name = "hardButton";
+            this.hardButton.Size = new System.Drawing.Size(48, 17);
+            this.hardButton.TabIndex = 24;
+            this.hardButton.Text = "Hard";
+            this.hardButton.UseVisualStyleBackColor = true;
+            // 
+            // mediumButton
+            // 
+            this.mediumButton.AutoSize = true;
+            this.mediumButton.Checked = true;
+            this.mediumButton.Location = new System.Drawing.Point(3, 26);
+            this.mediumButton.Name = "mediumButton";
+            this.mediumButton.Size = new System.Drawing.Size(62, 17);
+            this.mediumButton.TabIndex = 23;
+            this.mediumButton.TabStop = true;
+            this.mediumButton.Text = "Medium";
+            this.mediumButton.UseVisualStyleBackColor = true;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label9.Location = new System.Drawing.Point(129, 302);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(77, 24);
+            this.label9.TabIndex = 27;
+            this.label9.Text = "Difficulty";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label11.Location = new System.Drawing.Point(358, 344);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(119, 13);
+            this.label11.TabIndex = 28;
+            this.label11.Text = "Developed by SeanTsai";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 362);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.startButton);
             this.Controls.Add(this.quotient);
             this.Controls.Add(this.label5);
@@ -323,11 +477,15 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Math Quiz";
+            this.Text = "Math Game";
             ((System.ComponentModel.ISupportInitialize)(this.sum)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.difference)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.quotient)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.product)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -359,6 +517,17 @@
         private System.Windows.Forms.Label timesLeftLabel;
         private System.Windows.Forms.Button startButton;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.RadioButton timeButton1;
+        private System.Windows.Forms.RadioButton timeButton2;
+        private System.Windows.Forms.RadioButton timeButton3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.RadioButton easyButton;
+        private System.Windows.Forms.RadioButton hardButton;
+        private System.Windows.Forms.RadioButton mediumButton;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label11;
     }
 }
 
