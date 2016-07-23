@@ -33,42 +33,78 @@ namespace MathQuiz
 
         public void StartTheQuiz()
         {
-            // addition problem
-            addend1 = randomizer.Next(51);
-            addend2 = randomizer.Next(51);
+            if (easyButton.Checked) // easy problem
+            {
+                addend1 = randomizer.Next(11);
+                addend2 = randomizer.Next(11);
 
+                minuend = randomizer.Next(1, 21);
+                subtrahend = randomizer.Next(1, minuend);
+
+                multiplicand = randomizer.Next(2, 6);
+                multiplier = randomizer.Next(2, 6);
+
+                divisor = randomizer.Next(2, 6);
+                int temp = randomizer.Next(2, 6);
+                dividend = divisor * temp;
+            }
+            else if (hardButton.Checked) // hard problem
+            {
+                addend1 = randomizer.Next(501);
+                addend2 = randomizer.Next(501);
+
+                minuend = randomizer.Next(1, 1001);
+                subtrahend = randomizer.Next(1, minuend);
+
+                multiplicand = randomizer.Next(2, 32);
+                multiplier = randomizer.Next(2, 32);
+
+                divisor = randomizer.Next(2, 32);
+                int temp = randomizer.Next(2, 32);
+                dividend = divisor * temp;
+            }
+            else // medium problems (default)
+            { 
+                addend1 = randomizer.Next(51);
+                addend2 = randomizer.Next(51);
+
+                minuend = randomizer.Next(1, 101);
+                subtrahend = randomizer.Next(1, minuend);
+
+                multiplicand = randomizer.Next(2, 11);
+                multiplier = randomizer.Next(2, 11);
+
+                divisor = randomizer.Next(2, 11);
+                int temp = randomizer.Next(2, 11);
+                dividend = divisor * temp;
+            }
+
+            // display problems
             plusLeftLabel.Text = addend1.ToString();
             plusRightLabel.Text = addend2.ToString();
             sum.Value = 0;
-
-            // subtraction problem
-            minuend = randomizer.Next(1, 101);
-            subtrahend = randomizer.Next(1, minuend);
 
             minusLeftLabel.Text = minuend.ToString();
             minusRightLabel.Text = subtrahend.ToString();
             difference.Value = 0;
 
-            // multiplication problem
-            multiplicand = randomizer.Next(2, 11);
-            multiplier = randomizer.Next(2, 11);
-
             timesLeftLabel.Text = multiplicand.ToString();
             timesRightLabel.Text = multiplier.ToString();
             product.Value = 0;
-
-            // division problem
-            divisor = randomizer.Next(2, 11);
-            int temp = randomizer.Next(2, 11);
-            dividend = divisor * temp;
 
             dividedLeftLabel.Text = dividend.ToString();
             dividedRightLabel.Text = divisor.ToString();
             quotient.Value = 0;
 
             // Start the timer
-            timeLeft = 15;
-            timeLabel.Text = "15 seconds";
+            if (timeButton1.Checked)
+                timeLeft = 15;
+            else if (timeButton3.Checked)
+                timeLeft = 60;
+            else
+                timeLeft = 30;
+
+            timeLabel.Text = timeLeft.ToString() + " seconds";
             timer1.Start();
         }
 
@@ -83,7 +119,7 @@ namespace MathQuiz
             if (CheckTheAnswer())
             {
                 timer1.Stop();
-                MessageBox.Show("Smart Ass! You got all the answers correct!", "Congratulation!");
+                MessageBox.Show("Awesome! You got all the answers correct!", "Congratulation!");
                 startButton.Enabled = true;
                 timeLabel.BackColor = Color.Transparent;
             }
@@ -100,7 +136,7 @@ namespace MathQuiz
             {
                 timer1.Stop();
                 timeLabel.Text = "Time's up!";
-                MessageBox.Show("You didn't finish in time.", "Sorry!");
+                MessageBox.Show("Sorry, time's up.", "Sorry!");
                 sum.Value = addend1 + addend2;
                 difference.Value = minuend - subtrahend;
                 product.Value = multiplicand * multiplier;
