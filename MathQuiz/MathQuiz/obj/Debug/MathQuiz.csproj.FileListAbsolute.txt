@@ -1,1 +1,9 @@
 C:\Users\Admin\Desktop\VisualStudioProject\MathQuiz\MathQuiz\bin\Debug\MathQuiz.exe.config
+C:\Users\Admin\Desktop\VisualStudioProject\MathQuiz\MathQuiz\bin\Debug\MathQuiz.exe
+C:\Users\Admin\Desktop\VisualStudioProject\MathQuiz\MathQuiz\bin\Debug\MathQuiz.pdb
+C:\Users\Admin\Desktop\VisualStudioProject\MathQuiz\MathQuiz\obj\Debug\MathQuiz.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\VisualStudioProject\MathQuiz\MathQuiz\obj\Debug\MathQuiz.Form1.resources
+C:\Users\Admin\Desktop\VisualStudioProject\MathQuiz\MathQuiz\obj\Debug\MathQuiz.Properties.Resources.resources
+C:\Users\Admin\Desktop\VisualStudioProject\MathQuiz\MathQuiz\obj\Debug\MathQuiz.csproj.GenerateResource.Cache
+C:\Users\Admin\Desktop\VisualStudioProject\MathQuiz\MathQuiz\obj\Debug\MathQuiz.exe
+C:\Users\Admin\Desktop\VisualStudioProject\MathQuiz\MathQuiz\obj\Debug\MathQuiz.pdb
