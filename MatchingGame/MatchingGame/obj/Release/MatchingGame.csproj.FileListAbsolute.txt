@@ -1,0 +1,8 @@
+C:\Users\Admin\Desktop\VisualStudioProject\MatchingGame\MatchingGame\bin\Release\MatchingGame.exe.config
+C:\Users\Admin\Desktop\VisualStudioProject\MatchingGame\MatchingGame\bin\Release\MatchingGame.exe
+C:\Users\Admin\Desktop\VisualStudioProject\MatchingGame\MatchingGame\bin\Release\MatchingGame.pdb
+C:\Users\Admin\Desktop\VisualStudioProject\MatchingGame\MatchingGame\obj\Release\MatchingGame.Form1.resources
+C:\Users\Admin\Desktop\VisualStudioProject\MatchingGame\MatchingGame\obj\Release\MatchingGame.Properties.Resources.resources
+C:\Users\Admin\Desktop\VisualStudioProject\MatchingGame\MatchingGame\obj\Release\MatchingGame.csproj.GenerateResource.Cache
+C:\Users\Admin\Desktop\VisualStudioProject\MatchingGame\MatchingGame\obj\Release\MatchingGame.exe
+C:\Users\Admin\Desktop\VisualStudioProject\MatchingGame\MatchingGame\obj\Release\MatchingGame.pdb
